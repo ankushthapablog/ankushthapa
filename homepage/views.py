@@ -8,4 +8,4 @@ def homepage(request):
     #return render_to_response('homepage/homepage.html', {} , context_instance=RequestContext(request))
 
 def dev(request):
-    pass
+    return render_to_response('homepage/homepage.html', {} , context_instance=RequestContext(request))
