@@ -22,11 +22,11 @@ TEMPLATE_DIRS = (
 SECRET_KEY = '@r=6#8vj5yhd=d4*zv0lgurz&1x+#^its5m!45ks9_6cuco!60'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ankushthapa.com']
 
 
 # Application definition
