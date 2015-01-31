@@ -24,3 +24,10 @@ def homepage(request):
     access_string = str(dt) + ' - ' + str(user_agent) + ' - ' + str(client_ip) + ' - ' + str(http_referer)
     AccessLogs.objects.create(access_string=access_string)
     return render_to_response('homepage/homepage.html', {} , context_instance=RequestContext(request))
+
+def twitter(request):
+    return render_to_response('twitter.html', {} , context_instance=RequestContext(request))
+
+
+def instagram(request):
+    return render_to_response('instagram.html', {} , context_instance=RequestContext(request))
