@@ -13,7 +13,7 @@ def get_client_ip(request):
         ip = request.META.get('REMOTE_ADDR')
     return ip
 
-def homepage(request):
+def get_access_string(request):
     try:
         http_referer = request.META['HTTP_REFERER']
     except:
@@ -21,13 +21,22 @@ def homepage(request):
     client_ip = get_client_ip(request)
     user_agent = request.META['HTTP_USER_AGENT']
     dt = datetime.datetime.now()
-    access_string = str(dt) + ' - ' + str(user_agent) + ' - ' + str(client_ip) + ' - ' + str(http_referer)
-    AccessLogs.objects.create(access_string=access_string)
+    return str(dt) + ' - ' + str(user_agent) + ' - ' + str(client_ip) + ' - ' + str(http_referer)
+
+def homepage(request):
+    page = 'homepage'
+    access_string = get_access_string(request)
+    AccessLogs.objects.create(access_string=access_string, page_name=page)
     return render_to_response('homepage/homepage.html', {} , context_instance=RequestContext(request))
 
 def twitter(request):
+    page = 'twitter'
+    access_string = get_access_string(request)
+    AccessLogs.objects.create(access_string=access_string, page_name=page)
     return render_to_response('twitter.html', {} , context_instance=RequestContext(request))
 
-
 def instagram(request):
+    page = 'instagram'
+    access_string = get_access_string(request)
+    AccessLogs.objects.create(access_string=access_string, page_name=page)
     return render_to_response('instagram.html', {} , context_instance=RequestContext(request))
