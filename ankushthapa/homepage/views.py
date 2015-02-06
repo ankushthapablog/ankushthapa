@@ -28,15 +28,3 @@ def homepage(request):
     access_string = get_access_string(request)
     AccessLogs.objects.create(access_string=access_string, page_name=page)
     return render_to_response('homepage/homepage.html', {} , context_instance=RequestContext(request))
-
-def twitter(request):
-    page = 'twitter'
-    access_string = get_access_string(request)
-    AccessLogs.objects.create(access_string=access_string, page_name=page)
-    return render_to_response('twitter.html', {} , context_instance=RequestContext(request))
-
-def instagram(request):
-    page = 'instagram'
-    access_string = get_access_string(request)
-    AccessLogs.objects.create(access_string=access_string, page_name=page)
-    return render_to_response('instagram.html', {} , context_instance=RequestContext(request))

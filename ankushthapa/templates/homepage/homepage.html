@@ -1,50 +1,378 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Ankush Thapa | Personal Profile</title>
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="See Personal and Profession profile of Ankush Thapa, IIT Bombay Alumnus.">
+<meta name="keywords" content="Software, Developer, Ankush, Thapa, Instagram, Facebook, Quora, Twitter, Profile, IIT, Bombay, IITB, Alumnus, Civil, Engineer, Traveller, Fan">
+<meta name="author" content="Ankush Thapa">
+<meta name="robots" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="static/css/swipebox.css">
+<script src="static/js/jquery.min.js"></script>
+<!------ Light Box ------>
+    <script src="static/js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+    <!------ Eng Light Box ------>
+	<script type="text/javascript" src="static/js/move-top.js"></script>
+       <script type="text/javascript" src="static/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta name="description" content="See Personal and Profession profile of Ankush Thapa, IIT Bombay Alumnus.">
-        <meta name="keywords" content="Software Developer, Backend Developer, Instagram fan, Linkedin Profile, Traveller, working at bhane, technology, python django, IIT Mumbai, bhane clothing industry ecommerce">
-        <meta name="author" content="Ankush Thapa">
-        <meta name="robots" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ankush Thapa - Personal Profile</title>
+</head>
+<body>
+<!-- header -->
+	<div class="banner">
+  	    <div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="static/images/logo.png" class="img-responsive" alt="" /></a>
+				</div>
+				<div class="menu">												
+						{% comment %}
+						<a href="#" class="right_bt" id="activator"><img src="static/images/menu.png" alt=""/></a>
+							<div class="box" id="box">
+								<div class="box_content">
+								<div class="social-top">
+									<ul>
+										<li><a target="_blank" href="https://www.facebook.com/ankushiitb"><i class="facebook-2"> </i></a></li>
+										<li><a target="_blank" href="https://twitter.com/ankushthapa"><i class="twiter-2"> </i></a></li>
+										<li><a target="_blank" href="https://www.youtube.com/channel/UCeJ8-chj5h4nxZkQoMD6oEg"><i class="youtube-2"> </i></a></li>
+										<li><a target="_blank" href="https://plus.google.com/+ankushthapa/posts"><i class="goplus-2"> </i></a></li>
+											<div class="clearfix"></div>	
+									</ul>
+								</div>
+								   <div class="menu_box_list">
+									   <ul>
+										   <li class="active"><a href="#home" class="scroll">home</a></li>
+											<li><a href="#portfolio" class="scroll">Instagram</a></li>
+											<li><a href="#qualification" class="scroll">qualification</a></li>
+											<li><a href="#article" class="scroll">article</a></li>
+											<li><a href="#hire" class="scroll">hire</a></li>
+												<div class="clearfix"></div>
+										</ul>
+									</div>
+									
+									<a class="boxclose" id="boxclose"><img src="static/images/close.png" alt=""/></a>
+								</div> 								
+							</div>
+						{% endcomment %}
+							<script type="text/javascript" src="static/js/easing.js"></script>
+								 <script type="text/javascript">
+										var $ = jQuery.noConflict();
+											$(function() {
+												$('#activator').click(function(){
+														$('#box').animate({'top':'0px'},500);
+												});
+												$('#boxclose').click(function(){
+														$('#box').animate({'top':'-700px'},500);
+												});
+											});
+											$(document).ready(function(){
+											
+											//Hide (Collapse) the toggle containers on load
+											$(".toggle_container").hide(); 
+											
+											//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+											$(".trigger").click(function(){
+												$(this).toggleClass("active").next().slideToggle("slow");
+												return false; //Prevent the browser jump to the link anchor
+											});
+											
+											});
+										</script>
+				</div> 
+				
+						<div class="clearfix"></div>
+			</div>
+			<div class="banner-info">
+				<h1>Hello! I am Ankush.<span> <br>I am developing <a href="http://www.bhane.com/" target="_blank">bhane.</a></span></h1>
+			</div>
+		</div> 		
+	</div>	
+<!-- header -->
+<!-- action -->
+	<div class="action">
+		<div class="container">
+			<div class="col-md-7 action-left">
+				<h3>know about my professional profile</h3>
+				<p>connect with me over linkedin</p>
+			</div>
+			<div class="col-md-5 action-right">
+				<a target="_blank" href="http://in.linkedin.com/in/ankushthapa/en" class="btn  btn-1b">Connect</a>
+			</div>
+					<div class="clearfix"></div>		
+		</div>
+	</div>
+<!-- action -->
+<!-- about -->
+	<div class="about-me">
+		<div class="container">
+				<h2>ABOUT ME</h2>
+				<h3> I am tech lead at <a href="http://www.bhane.com/" target="_blank">bhane.<a/></h3>
+				<p>Earlier I was developing shine.com working as deputy manager with HT Media. After graduating from IIT Bombay as civil engineer in 2011 I joined digital e-commerce startup futurebazaar.com in Mumbai as a Software Developer. After leaving futurebazaar and Mumbai in Oct 2012, I joined a mobile payments startup in Bangalore. Soon after that Delhi called me and now I am living in Gurgaon since April 2013.</p>
+			<div class="social-about">
+				<ul>
+					<li class="blue"><a target="_blank" href="https://www.facebook.com/ankushiitb"><i class="facebook1"> </i></a></li>
+					<li class="skyblue"><a target="_blank" href="https://twitter.com/ankushthapa"><i class="twiter1"> </i></a></li>
+					<li class="pink"><a target="_blank" href="#"><i class="drible1"> </i></a></li>
+					<li class="red"><a target="_blank" href="https://plus.google.com/+ankushthapa/posts"><i class="goplus1"> </i></a></li>
+						<div class="clearfix"></div>	
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- about -->
+<!-- portfolio -->
+	<div class="portfolio-section" id="portfolio">
+	<div class="container">
+	<h2><a href="http://instagram.com/ankushthapa" target="_blank">Instagram</a></h2>
+	<p> My Instagram profile</p>
+		</div>
+	 <div class="portfolio"  id="portfolio">
+				<div id="portfoliolist">
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							<a href="static/images/1.jpg" class="swipebox"  title="Marine Drive, Mumbai"> <img src="static/images/1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+							
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="static/images/2.jpg" class="swipebox"  title="Wagah border, Amritsar"> <img src="static/images/2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+							 
+		                </div>
+					</div>					
+					
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="static/images/3.jpg" class="swipebox"  title="Narkanda, Shimla"> <img src="static/images/3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+							
+		                </div>
+					</div>						
+						
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							<a href="static/images/4.jpg" class="swipebox"  title="Bhogpur, NH1 Jalandhar"> <img src="static/images/4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+		                </div>
+					</div>										
+					<div class="clearfix"></div>								
+				</div>
+					<div class="clearfix"></div>
+    </div>
+							<a href="http://instagram.com/ankushthapa" target="_blank" class="btn  btn-1b">View Profile</a>
+	  <!-- Script for gallery Here -->
+				<script type="text/javascript" src="static/js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+<!-- portfolio-section  -->
+</div>
+<!-- portfolio -->
+{% comment %}
+<!-- skills -->
+	<div class="skills" id="qualification">
+		<div class="container">
+			<h3>skills</h3>
+			<p>My ess !</p>
+					<div class="skills-bottom">
+						<div class="green-about">
+							<div class="about-green">
+								<h6>Photoshop</h6>							
+								<div class="content-green">
+									<div style="width:80%;" >
+									</div>
+								 </div>
+							</div>	
+							<div class="about-green">
+								<h6>Ilustrator</h6>							
+								<div class="content-green">
+									<div style="width:40%;" >
+									</div>
+								 </div>
+							</div>	
+							<div class="about-green">
+								<h6>HTML</h6>							
+								<div class="content-green">
+									<div style="width:60%;" >
+									</div>
+								 </div>
+							</div>	
+							<div class="about-green">
+								<h6>css</h6>							
+								<div class="content-green">
+									<div style="width:70%;" >
+									</div>
+								 </div>
+							</div>	
+							<div class="about-green">
+								<h6>Javascript</h6>							
+								<div class="content-green">
+									<div style="width:30%;" >
+									</div>
+								 </div>
+							</div>
+							<div class="about-green">
+								<h6>PYthon</h6>							
+								<div class="content-green">
+									<div style="width:20%;" >
+									</div>
+								 </div>
+							</div>
+						</div>		
+					</div>
+					
 
-        <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
-    </head>	
-
-    <body>
-        <img class="vegas-background" src="/static/images/background.jpg" style="position: fixed; left: 0px; top: -114px; width: 1400px; height: 865px; bottom: auto; right: auto;">
-        <div class="vegas-overlay" style="margin: 0px; padding: 0px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></div>
-        <div class="content">
-            <div class="logo">
-                <h1><a href="/" title="Ankush Thapa">Ankush Thapa</a></h1>
-            </div>
-            <p><strong>I'm Ankush</strong>, Software Developer &amp; maker of fine things that live on the internets.</p>
-            <ul>
-                <li class="twitter"><a target="_blank" href="/twitter/" title="Twitter"></a></li>
-                <li class="contrastly"><a target="_blank" href="/instagram/" title="Instagram"></a></li>
-                <li class="email"><a target="_blank" href="mailto:ankushiitb@gmail.com" title="Email"></a></li>
-            </ul>
-            <div id="bsap_1480" class="bsap" data-serve="C6AD42V"></div>
-        </div>
-
-
-        <script type="text/javascript">
-          $(document).ready(function() { 
-                $(".content").css("display", "none");
-                $(".content").fadeIn(1500);
-            });
-        </script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-42631588-2', 'auto');
-          ga('send', 'pageview');
-        </script>
-
-    </body>
+		</div>
+	</div>
+<!-- skills -->
+{% endcomment %}
+<!-- think -->
+<div class="think" id="hire">
+	<div class="container">
+		<div class="col-md-5 think-left">
+				<a href="http://www.quora.com/Ankush-Thapa" target="_blank" class="btn1  btn-1c">Quora</a>
+			</div>
+			<div class="col-md-7 think-right">
+				<h3 style="font-size:4em;">I'm big fan of Quora. </h3>
+				<p>follow me on quora</p>
+			</div>
+					<div class="clearfix"></div>		
+	</div>
+</div>
+<!-- think -->
+{% comment %}
+<!-- shocked -->
+<div class="shocked" id="article">
+	<div class="container">
+		<div class="shocked-top">
+			<img src="static/images/img1.png" class="img-responsive" alt="" />
+			<h3>“I am SHOCKED !”</h3>
+			<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus consuetudium lectorum.  </p>
+			<a href="#contact" class="scroll""><img src="static/images/downarrow.png" class="img-responsive" alt="" /></a>
+		</div>
+	</div>
+</div>
+<!-- shocked -->
+<!-- contuct -->
+	<div class="contuct" id="contact">
+		<div class="container">
+			<h3>CONTACT ?</h3>
+			<p>Have a question for me ? please drop me a message here, I ll get back to you soon.</p>
+		</div>
+	</div>
+<!-- contuct -->
+<!-- waiting -->
+	<div class="waiting">
+		<div class="container">
+			<div class="waiting-top">
+				<div class="col-md-5 waiting-left">
+					<div class="waiting-left1">
+						<h4> Typi non habent </h4>
+						<h3> Nam liber</h3>
+					</div>
+				</div>
+				<div class="col-md-7 waiting-right">
+					<form>
+						<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					</form>	
+					<div class="text2">
+	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+					   <input type="submit" class="mybutton" value="Submit">
+	              	 </div>	
+				</div>
+					<div class="clearfix"></div>		
+			</div>
+			<div class="social">
+						<ul>
+							<li class="blue"><a href="#"><i class="facebook"> </i></a></li>
+							<li class="skyblue"><a href="#"><i class="twiter"> </i></a></li>
+							<li class="pink"><a href="#"><i class="drible"> </i></a></li>
+							<li class="red"><a href="#"><i class="goplus"> </i></a></li>
+								<div class="clearfix"></div>	
+						</ul>
+					</div>
+		</div>
+	</div>
+<!-- waiting -->
+	<div class="waiting-bottom">
+	</div>
+{% endcomment %}
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<p>In case you want to contact me, drop an email at <a href="mailto:ankushiitb@gmail.com" target="_blank">ankushiitb@gmail.com</a></p>
+		</div>
+	</div>
+<!-- footer -->
+</body>
 </html>
