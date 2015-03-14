@@ -15,6 +15,7 @@ TEMPLATE_DIRS = (
                 BASE_DIR + '/templates/',
         )
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -23,11 +24,11 @@ TEMPLATE_DIRS = (
 SECRET_KEY = 'gx1stwww-5*790u2gah@uv^(3nxeb)bp%g2ohg_n^@r!zeo&%f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

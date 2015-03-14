@@ -1,0 +1,2 @@
+2015/03/13 10:27:52 [error] 24321#0: *1 open() "/usr/share/nginx/html/r" failed (2: No such file or directory), client: 223.30.238.6, server: www.ankushthapa.com, request: "GET /r HTTP/1.1", host: "www.ankushthapa.com"
+2015/03/13 10:35:42 [error] 24321#0: *4 open() "/usr/share/nginx/html/login.do" failed (2: No such file or directory), client: 218.246.34.99, server: www.ankushthapa.com, request: "POST /login.do HTTP/1.1", host: "54.187.248.212"
